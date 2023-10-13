@@ -1,43 +1,24 @@
-# Your Title Here
+# Rock, Paper, Scissors, shoot!
+Fall 2023 ECE 4554/5554 Computer Vision: Course Project
+
 ## Names of Team Members Here
-Fall 2021 ECE 4554/5554 Computer Vision: Course Project
-Virginia Tech
+Henry Forsyth, Sagar Ranga, Shefali Ranjan
 
 ---
 
-# Abstract
-One or two sentences on the motivation behind the problem you are solving. One or two sentences describing the approach you took. One or two sentences on the main result you obtained.
 
-# Teaser figure
-A figure that conveys the main idea behind the project or the main application being addressed.
+## Problem Statement
+The goal of this project is to develop a real-time hand gesture recognition system that leverages a pre-trained model to accurately detect and classify hand gestures for playing rock-paper-scissors against a user.
 
+## Approach
+The approach for this project involves two main stages: hand detection and hand gesture classification. For hand detection, I plan to use a pre-trained deep learning model, such as a pre-trained Faster R-CNN or YOLO, to localize the hand within the image. For hand gesture classification, I will use transfer learning to fine-tune a pre-trained convolutional neural network (CNN), such as VGG or ResNet, on a dataset of hand gesture images to classify the detected hand region into one of the three classes: rock, paper, or scissors. Data augmentation techniques, such as rotation and scaling, will be used to increase the diversity of the training data. I will implement these models using deep learning frameworks such as TensorFlow or PyTorch.
 
+## Experiments and Results
+The experimental setup will involve collecting a dataset of hand gesture images with various backgrounds, lighting conditions, and hand orientations. I plan to split the dataset into training and testing sets, with 80% of the data used for training and 20% for testing. The evaluation metric used will be classification accuracy. I will fine-tune the hyperparameters of the model (e.g., learning rate, batch size) and observe their impact on performance. I will also compare the performance of the fine-tuned model against the pre-trained model.
 
+For the experiments, I plan to perform the following:
 
-# Introduction
-Motivation behind the problem you are solving, what applications it has, any brief background on the particular domain you are working in (if not regular RBG photographs), etc. If you are using a new way to solve an existing problem, briefly mention and describe the existing approaches and tell us how your approach is new.
-
-# Approach
-Describe very clearly and systematically your approach to solve the problem. Tell us exactly what existing implementations you used to build your system. Tell us what obstacles you faced and how you addressed them. Justify any design choices or judgment calls you made in your approach.
-
-# Experiments and results
-Provide details about the experimental set up (number of images/videos, number of datasets you experimented with, train/test split if you used machine learning algorithms, etc.). Describe the evaluation metrics you used to evaluate how well your approach is working. Include clear figures and tables, as well as illustrative qualitative examples if appropriate. Be sure to include obvious baselines to see if your approach is doing better than a naive approach (e.g. for classification accuracy, how well would a classifier do that made random decisions?). Also discuss any parameters of your algorithms, and tell us how you set the values of those parameters. You can also show us how the performance varies as you change those parameter values. Be sure to discuss any trends you see in your results, and explain why these trends make sense. Are the results as expected? Why?
-
-
-
-
-# Qualitative results
-Show several visual examples of inputs/outputs of your system (success cases and failures) that help us better understand your approach.
-
-
-
-
-# Conclusion
-This report has described .... Briefly summarize what you have done.
-
-# References
-Provide a list of references to other work that supported your project.
-
-© Names of Team Members Here
-
-
+Fine-tune the pre-trained CNN model on the training dataset and evaluate its performance on the test dataset.
+Fine-tune the hyperparameters of the model and observe their impact on performance.
+Test the model in a real-time scenario where it plays rock-paper-scissors against a user.
+I expect the experiments to reveal the effectiveness of the proposed approach in detecting and classifying hand gestures for playing rock-paper-scissors. The fine-tuned model is expected to outperform the pre-trained model due to the domain-specific training. However, the performance may vary depending on the quality of the dataset, the choice of hyperparameters, and the real-time conditions during testing.
