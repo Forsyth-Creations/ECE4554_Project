@@ -14,6 +14,7 @@ The goal of our project is to develop a real-time hand gesture recognition syste
 Our approach for this project involves two main stages: hand detection and hand gesture classification. For hand detection, we plan to use a pre-trained deep learning model, such as a pre-trained Faster R-CNN or YOLO, to localize the hand within the image. For hand gesture classification, we will use transfer learning to fine-tune a pre-trained convolutional neural network (CNN), such as VGG or ResNet, on a dataset of hand gesture images to classify the detected hand region into one of the four classes: rock, paper, scissors, or none/undecided. "None" or "Undecided" will be decided by a threshold of confidence, so if the gesture doesn't match then it will be thrown out. Data augmentation techniques, such as rotation and scaling, will be used to increase the diversity of the training data. We will implement these models using deep learning frameworks such as TensorFlow or PyTorch.
 
 An example of the dataset we are planning on training off of is found here:
+
 [Dataset 1](https://public.roboflow.com/classification/rock-paper-scissors/1)
 
 ## Experiments and Results
