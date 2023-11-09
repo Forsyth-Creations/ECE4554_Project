@@ -7,9 +7,3 @@ import os
 # extract the zip file
 with zipfile.ZipFile("dataset.zip", 'r') as zip_ref:
     zip_ref.extractall("dataset")
-
-# remove the zip file
-os.system("rm rock-paper-scissors.zip")
-
-# rename the folder
-os.system("mv rock-paper-scissors dataset")
