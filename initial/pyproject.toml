@@ -12,6 +12,9 @@ nvidia-cublas-cu11 = "^11.11.3.6"
 torch = "1.12.1" 
 
 
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.26.0"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"

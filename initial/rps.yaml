@@ -1,0 +1,4 @@
+train: ./dataset_original/train 
+val: ./dataset_original/valid 
+nc: 3
+names: ['rock', 'paper', 'scissors']
