@@ -7,3 +7,11 @@ https://public.roboflow.com/models/classification
 https://docs.ultralytics.com/yolov5/tutorials/train_custom_data/#11-create-datasetyaml
 
 Each row is class x_center y_center width height format.
+
+https://pytorch.org/hub/ultralytics_yolov5/
+
+https://pysource.com/2023/02/21/instance-segmentation-yolo-v8-opencv-with-python-tutorial/
+
+sudo apt-get install python3-opencv
+
+https://github.com/ultralytics/ultralytics/issues/561
