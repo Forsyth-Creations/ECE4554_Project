@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 3
+names: ['paper', 'rock', 'scissors']
+
+roboflow:
+  workspace: virginia-tech-smbuc
+  project: rockpaperscissors2-2ba5y
+  version: 7
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/virginia-tech-smbuc/rockpaperscissors2-2ba5y/dataset/7

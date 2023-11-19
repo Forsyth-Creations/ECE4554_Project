@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "rpc"
+version = "0.1.0"
+description = ""
+authors = ["Forsyth-Creations <robert.h.forsyth@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10,<3.13"
+ultralytics = "^8.0.208"
+nvidia-cublas-cu11 = "^11.11.3.6"
+torch = "1.12.1" 
+colorama = "^0.4.6"
+plotly = "^5.18.0"
+nbformat = "^5.9.2"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.26.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
