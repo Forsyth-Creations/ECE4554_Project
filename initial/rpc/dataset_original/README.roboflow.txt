@@ -1,8 +1,8 @@
 
-RockPaperScissors2 - v1 2023-11-13 9:17am
+RockPaperScissors2 - v7 2023-11-13 6:02pm
 ==============================
 
-This dataset was exported via roboflow.com on November 13, 2023 at 2:20 PM GMT
+This dataset was exported via roboflow.com on November 13, 2023 at 11:03 PM GMT
 
 Roboflow is an end-to-end computer vision platform that helps you
 * collaborate with your team on computer vision projects
@@ -17,17 +17,14 @@ visit https://github.com/roboflow/notebooks
 
 To find over 100k other datasets and pre-trained models, visit https://universe.roboflow.com
 
-The dataset includes 105 images.
+The dataset includes 918 images.
 Rock-paper-scissors are annotated in YOLOv8 format.
 
 The following pre-processing was applied to each image:
-* Auto-orientation of pixel data (with EXIF-orientation stripping)
-* Resize to 640x640 (Stretch)
 
 The following augmentation was applied to create 3 versions of each source image:
 * 50% probability of horizontal flip
-* Equal probability of one of the following 90-degree rotations: none, clockwise, counter-clockwise
+* 50% probability of vertical flip
 * Random rotation of between -15 and +15 degrees
-* Random shear of between -15° to +15° horizontally and -15° to +15° vertically
 
 

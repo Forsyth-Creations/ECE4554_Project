@@ -15,3 +15,12 @@ https://pysource.com/2023/02/21/instance-segmentation-yolo-v8-opencv-with-python
 sudo apt-get install python3-opencv
 
 https://github.com/ultralytics/ultralytics/issues/561
+
+
+Train 14: Basic
+
+Train 16: Added more stock photos
+
+Train 17: Added more of my Hand
+
+Train 18: Even more of close-up rock
