@@ -1,129 +1,498 @@
-<!-- Write me a basic, nice looking webpage -->
-<!-- It should contain at least 3 different paragraphs and a header -->
-
-<!DOCTYPE html>
 <html>
 
 <head>
-    <title>Web</title>
-    <!-- Import CSS -->
-    <link rel="stylesheet" type="text/css" href="style.css">
+        <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+        <!-- import styles.css -->
+        <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
-    <t>Rock, Paper, Scissors: YOLO and Roboflow </t>
-    <p class="caption">By: Henry Forsyth, Shefali Ranjan, Sagar Ranga</p>
-
-    <div class="background2 flex-row">
-        <div>
-            <h1>Abstract:</h1>
-            <p>In this project, we wanted to develop a real-time hand gesture recognition system that leverages a
-                pre-trained model to accurately detect and classify hand gestures for playing rock-paper-scissors
-                against a
-                user. We use an Ultralytics YOLOv8 model with the PyTorch deep learning framework for this task. The
-                model
-                is trained on a custom dataset for rock-paper-scissors gestures. The confidence level is pulled from the
-                model along with a bounding box to display the model prediction live. Due to local machine limitations,
-                the
-                model is trained on various subsets of our data and improved incrementally. The final result is a robust
-                model that can accurately classify most cases of rock, paper and scissors.</p>
+<body class="c13 doc-content">
+        <h2 class="c8 c18" id="h.fogw1fne82av"><span class="c5"></span></h2>
+        <h2 class="c8 c18" id="h.z8olxe5r7tim"><span class="c5"></span></h2>
+        <h2 class="c8 c18" id="h.ustx646xb47"><span class="c5"></span></h2>
+        <p class="c12 title" id="h.v702o5xh4jvn"><span class="c16"></span></p>
+        <p class="c12 title" id="h.5xnjfiovr5f8"><span class="c16"></span></p>
+        <p class="c12 title" id="h.ge7yruedqap3"><span class="c16"></span></p>
+        <div class="color2">
+                <p class="c22 title" id="h.vsfx27nrfqgw"><span class="c16">Rock, Paper, Scissors: YOLO and
+                                Roboflow</span></p>
+                <p class="c6"><span class="c0"></span></p>
+                <p class="c7"><span>
+                                By: </span><span class="c19">
+                                <p><a class="c2" href="mailto:rhforsythjr@vt.edu">Henry Forsyth</a></p>
+                                <p><a class="c2" href="mailto:shefalir@vt.edu">Shefali Ranjan</a></p>
+                                <p><a class="c2" href="mailto:rsagar@vt.edu">Sagar Ranga</a></p>
+                </p>
         </div>
-        <!-- Import an image -->
-        <img src="public/teaser.png" alt="teaser" class="basicImage">
-    </div>
+        <h2 class="c8" id="h.6w5g6achxvun"><span class="c5">Abstract: </span></h2>
+        <p class="c7"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span>In this project, we wanted to
+                        develop a real-time hand gesture recognition system that leverages a pre-trained model to
+                        accurately detect
+                        and classify hand gestures for playing rock-paper-scissors against a user. We use an Ultralytics
+                        YOLOv8
+                        model with the PyTorch deep learning framework for this task. The model is trained on a custom
+                        dataset for
+                        rock-paper-scissors gestures. The confidence level is pulled from the model along with a
+                        bounding box to
+                        display the model prediction live. Due to local machine limitations, the model is trained on
+                        various subsets
+                        of our data and improved incrementally. The final result is a robust model that can accurately
+                        classify most
+                        cases of rock, paper and scissors.</span></p>
+        <h2 class="c8" id="h.otx8c9ye5awz"><span class="c5">Teaser Figure: </span></h2>
+        <p class="c7"><span
+                        style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 720.00px; height: 334.67px;"><img
+                                alt="" src="images/image4.png"
+                                style="width: 720.00px; height: 334.67px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                                title=""></span></p>
+        <div class="color2">
+                <h2 class="c8" id="h.8z6zv2oyk88o"><span class="c5">Intro: </span></h2>
+                <p class="c7"><span class="c0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In the ever evolving
+                                landscape of
+                                human-computer interaction, the development of artificial intelligence (AI) models to
+                                recognize
+                                and
+                                interpret intricate hand gestures has become an exciting frontier. Our motivation was to
+                                integrate
+                                real-world actions with digital software. Specifically, our goal was to develop a
+                                real-time hand
+                                gesture
+                                recognition system to accurately detect and classify hand gestures for playing
+                                rock-paper-scissors against a
+                                user.</span></p>
+                <p class="c6"><span class="c0"></span></p>
+                <p class="c1"><span class="c0">The application of real-time hand gesture recognition models is huge
+                                considering
+                                that
+                                industry leaders like Apple and Meta have invested large swaths of capital to develop
+                                their
+                                products like
+                                Apple Vision Pro and Meta Quest. Their products actively use headset cameras for
+                                tracking hand
+                                movements and
+                                detecting hand gestures. Without human-computer interaction devices, hand gestures
+                                become the
+                                new method of
+                                interacting with their headsets to perform various tasks. </span></p>
+                <p class="c6"><span class="c0"></span></p>
+                <p class="c1"><span class="c0">Existing methodologies for hand gesture recognition have improved quite a
+                                lot.
+                                Prior
+                                methodologies often dealt with limitations in accuracy and real-time responsiveness. As
+                                a
+                                result, this
+                                project uses a highly popular model known as YOLO. It uses one of the best neural
+                                network
+                                architectures to
+                                produce high accuracy and overall processing speed, which perfectly matches with our
+                                requirements.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+        </div>
 
-    <div class="background1">
-        <h1>Introduction:</h1>
-        <p>In the ever evolving landscape of human-computer interaction, the development of artificial intelligence
-            (AI) models to recognize and interpret intricate hand gestures has become an exciting frontier. Our
-            motivation was to integrate real-world actions with digital software. Specifically, our goal was to
-            develop a real-time hand gesture recognition system to accurately detect and classify hand gestures for
-            playing rock-paper-scissors against a user.
-        </p>
-        <p>
-            The application of real-time hand gesture recognition models is huge considering that industry leaders
-            like Apple and Meta have invested large swaths of capital to develop their products like Apple Vision
-            Pro and Meta Quest. Their products actively use headset cameras for tracking hand movements and
-            detecting hand gestures. Without human-computer interaction devices, hand gestures become the new method
-            of interacting with their headsets to perform various tasks.
-        </p>
-        <p>
-            Existing methodologies for hand gesture recognition have improved quite a lot. Prior methodologies often
-            dealt with limitations in accuracy and real-time responsiveness. As a result, this project uses a highly
-            popular model known as YOLO. It uses one of the best neural network architectures to produce high
-            accuracy and overall processing speed, which perfectly matches with our requirements.
-        </p>
-    </div>
+        <h2 class="c8" id="h.k4q9rut5l96e"><span class="c5">Approach: </span></h2>
+        <p class="c7"><span class="c0">To create a model that could be able to detect three different hand positions
+                        (rock,
+                        paper, and scissors), we first had to create a dataset and annotate each model with a bounding
+                        box around
+                        the item we wished to classify. We found a great base dataset from Roboflow (public dataset:
+                        Rock Paper
+                        Scissors Dataset raw-300x300). To add more variety to the dataset, in terms of skin coloration,
+                        background
+                        colors, and direction of the image, we decided to take the original dataset and add more images
+                        of our own
+                        hands to add more data points. However, since the original dataset had not been annotated, we
+                        opted for
+                        picking a small subsample of images first to iteratively test the model before proceeding. Also,
+                        applied
+                        transformations to the images using built-in Roboflow helper functions, skewed some images, and
+                        changed the
+                        saturation of some images to add different data points. After generating more data points that
+                        were able to
+                        add more variety, we used Roboflow to annotate each image for our YOLOv8 model.</span></p>
+        <p class="c6"><span class="c0"></span></p>
+        <p class="c7"><span class="c0">We started with a pre-trained YOLOv8 model (pre-trained weights, yolov8n.pt). We
+                        started training with our custom dataset, through evaluation on a diverse set of images.
+                        Whenever we
+                        realized that there was a certain area that our training set was missing we added more images to
+                        the
+                        training set to result in the more inclusive model we could create. Through iteration, we were
+                        able to
+                        achieve a robust model that performed optimally. To visualize our results during evaluation, we
+                        used the
+                        OpenCV Library. This Library allowed us to observe our model&rsquo;s &nbsp;performance in
+                        different
+                        scenarios and enabled on-the-fly adjustments for improved accuracy.</span></p>
+        <div class="color2">
+                <h2 class="c8" id="h.4k194w9npuyq"><span class="c5">Experiments and Results: </span></h2>
+                <p class="c7"><span class="c0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;At the onset of this
+                                assignment,
+                                we
+                                were interested in producing a CV model that can determine if a rock, paper, or scissors
+                                hand is
+                                played in
+                                the classic game of &ldquo;rock, paper, scissors&rdquo;. For our baseline, we considered
+                                that
+                                the game is
+                                played with a strategy that results in the person having a 33.3% chance of guessing the
+                                correct
+                                counter-hand. We considered this to be the naive model for the game: any detections with
+                                confidence levels
+                                higher than this default were considered good data. However, we noted that a CV model
+                                with
+                                accuracy and
+                                confidence of 40% would be ineffective, inaccurate, and unusable. As such, as we
+                                experimented
+                                with creating
+                                a model, we sought as high an accuracy as possible (the value threshold we will discuss
+                                later).</span></p>
+                <p class="c7"><span class="c0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Understanding that we
+                                were
+                                generating
+                                a classifier, we could have implemented basic feature tracking based on equivalent
+                                changes in
+                                the gradient
+                                of the image. We could then use those features and manually classify them, and compare
+                                the data
+                                points
+                                directly to create an appropriate model. This approach, while plausible, would have more
+                                than
+                                doubled the
+                                time to market. Instead, we favored training our own CNN to classify the elements. To
+                                accomplish
+                                this, we
+                                leveraged the following:</span></p>
+                <p class="c6"><span class="c0"></span></p>
 
+                <ul class="c20 lst-kix_xlx2ql85dtwn-0 start">
+                        <li class="c7 c10"><span class="c15">RoboFlow</span><span class="c0">: An online website
+                                        that allows
+                                        you to import massive datasets and annotate the images with either a
+                                        classification,
+                                        segmentation, or
+                                        others of the like. RoboFlow has built-in training protocols, but for our
+                                        purposes we
+                                        favored training
+                                        locally with YOLOv8</span></li>
+                </ul>
+                <ul class="c20 lst-kix_h6awqcoksin0-0 start">
+                        <li class="c7 c10"><span class="c15">YOLOv8 and Cuda</span><span class="c0">&nbsp;run
+                                        locally. This
+                                        allowed us to leverage local development, as well as avoid the costs of training
+                                        models
+                                        on RoboFlow
+                                        (which occurs after training more than three models). All training was
+                                        accomplished on
+                                        an NVIDIA 2070,
+                                        using Cuda</span></li>
+                </ul>
+                <p class="c6"><span class="c0"></span></p>
+                <p class="c1"><span class="c0">The process for training a model, from start to finish, is described by
+                                the
+                                following
+                                steps. You will see these steps repeated in our experimentation:</span></p>
+                <ol class="c20 lst-kix_bo7dh0velakn-0 start" start="1">
+                        <li class="c7 c10 "><span class="c0">Find an appropriate training set, with images selected
+                                        to aid
+                                        the model</span></li>
+                        <li class="c7 c10 "><span>Annotate the images in the training set, with any of the classes in
+                                        question (in this case, </span><span class="c15">rock</span><span>, </span><span
+                                        class="c15">paper</span><span>, and </span><span
+                                        class="c15">scissors</span><span class="c0">)</span>
+                        </li>
+                        <li class="c7 c10 "><span class="c0">Distribute this data accordingly across the train,
+                                        valid, and
+                                        test images at a 70%, 15%, 15% ratio respectively to better train the
+                                        model</span></li>
+                        <li class="c7 c10 "><span>Pull that annotated dataset into the local YOLO model, and train it
+                                        up to a
+                                        certain set of epochs (cycles of training). YOLO will automatically stop the
+                                        training if
+                                        the model
+                                        hasn&rsquo;t improved greatly over a span of 50 epochs (called it&rsquo;s
+                                </span><span class="c3">patience</span><span class="c0">&nbsp;value)</span></li>
+                        <li class="c7 c10 "><span class="c0">Test the model, and head back to step 1 if model needs
+                                        to be
+                                        trained and improved</span></li>
+                </ol>
+                <p class="c6"><span class="c0"></span></p>
+                <p class="c1"><span>We used this cycle numerous times over the experimentation process, so let&rsquo;s
+                                start
+                                with
+                                our first decent model: </span><span class="c3">Train 14</span><span>. For </span><span
+                                class="c3">Train
+                                14</span><span class="c0">, we used some of the images from the dataset found in source
+                                7.:
+                        </span></p>
+                <p class="c6"><span class="c0"></span></p>
+                <p class="c1"><span>However, considering this training set is about 3000 images, we hoped to produce a
+                                model of
+                                similar accuracy with a smaller subset of images. In an attempt to do so, we chose a
+                                small
+                                subset of the to
+                                train the model off of. This resulted in the following confusion matrix. </span><span
+                                style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 621.50px; height: 464.60px;"><img
+                                        alt="" src="images/image11.png"
+                                        style="width: 621.50px; height: 464.60px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                                        title=""></span></p>
+                <p class="c1"><span class="c0">Note how the model clearly doesn&rsquo;t know how to distinguish between
+                                paper
+                                and
+                                scissors. This is a problem. As such, we added more images from the aforementioned
+                                dataset. The
+                                subsequent
+                                model (train 16) produced the following confusion matrix:</span></p>
+                <p class="c7"><span
+                                style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 720.00px; height: 540.00px;"><img
+                                        alt="" src="images/image3.png"
+                                        style="width: 720.00px; height: 540.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                                        title=""></span></p>
+                <p class="c1"><span>Note the improvement in rock&rsquo;s classification, but the apparent lack of image
+                                classification for paper. At this point, we considered the images available to the model
+                                across
+                                training,
+                                validation, and testing. Upon looking, we discovered that our subset of the original
+                                dataset
+                                contained a key
+                                error: all the training models were based on African Americans, Indians, and other races
+                                of
+                                darker
+                                complexion. However, our testing and validation subsets contained only Caucasian/lighter
+                                complexion photos.
+                                While we should have noticed this discrepancy immediately, as bias in AI models is
+                                inherently
+                                known, this
+                                was a failure in model production. We then tweaked the model, adding more than one
+                                hundred
+                                images to better
+                                balance the variety. As a result, we saw an immediate improvement in the confusion
+                                matrix. Below
+                                are the
+                                results of </span><span class="c3">Train 17</span><span class="c0">, our improved
+                                model:</span>
+                </p>
+                <p class="c6"><span class="c0"></span></p>
+                <p class="c7"><span
+                                style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 682.50px; height: 511.24px;"><img
+                                        alt="" src="images/image2.png"
+                                        style="width: 682.50px; height: 511.24px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                                        title=""></span></p>
+                <p class="c1"><span>Notice the clear improvement. Now that we had produced a decent model, we thought it
+                                prudent
+                                to
+                                compare the results of the </span><span class="c3">Train 14</span><span>&nbsp;model with
+                                the
+                        </span><span class="c3">Train 17</span><span class="c0">&nbsp;model. The following are the
+                                results of
+                                both models:</span>
+                </p>
+                <p class="c7"><span
+                                style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 720.00px; height: 360.00px;"><img
+                                        alt="" src="images/image13.png"
+                                        style="width: 720.00px; height: 360.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                                        title=""></span></p>
+                <p class="c7"><span>(</span><span class="c3">Train 14</span><span class="c0">)</span></p>
+                <p class="c7"><span
+                                style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 720.00px; height: 360.00px;"><img
+                                        alt="" src="images/image7.png"
+                                        style="width: 720.00px; height: 360.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                                        title=""></span></p>
+                <p class="c7"><span>(</span><span class="c3">Train 17</span><span class="c0">)</span></p>
+                <p class="c6"><span class="c0"></span></p>
+                <p class="c1"><span>Above all, notice the val/dfl_loss graph, and how the model in </span><span
+                                class="c3">Train
+                                17</span><span>&nbsp;trends toward stability, whereas </span><span class="c3">Train
+                                14</span><span>&nbsp;is
+                                not only more chaotic, but also doesn&rsquo;t produce as clear of a trend line. Note
+                                that the
+                                rest of the
+                                graphs for </span><span class="c3">Train 14</span><span>&nbsp;demonstrate an inability
+                                to
+                                properly classify
+                                the dataset, while </span><span class="c3">Train 17</span><span class="c0">&nbsp;appears
+                                to
+                                reflect a
+                                critically damped system. </span></p>
+                <p class="c1"><span>This was a clear indication to our team that, by diversifying the data available for
+                                training,
+                                we could produce a more accurate model. We proceeded to train more hands on the model,
+                                which
+                                produced
+                        </span><span class="c3">Train 18</span><span class="c0">, our most accurate model.</span></p>
+                <p class="c1"><span class="c0">Note that all of these models were trained under the same YOLO
+                                conditions, using
+                                a
+                                base model for training, equivalent batch sizes that the GPU could process, and a large
+                                enough
+                                number of
+                                epochs so as to not cripple the results of the model. This training scheme is captured
+                                in the
+                                code segment
+                                below:</span></p>
+                <p class="c6"><span class="c0"></span></p>
 
+                <ul class="c20 flex-col">
 
-    <div class="background2">
-        <h1>Approach: </h1>
-        <p>
-            To create a model that could be able to detect three different hand positions (rock, paper, and scissors),
-            we first had to create a dataset and annotate each model with a bounding box around the item we wished to
-            classify. We found a great base dataset from Roboflow (public dataset: Rock Paper Scissors Dataset
-            raw-300x300). To add more variety to the dataset, in terms of skin coloration, background colors, and
-            direction of the image, we decided to take the original dataset and add more images of our own hands to add
-            more data points. However, since the original dataset had not been annotated, we opted for picking a small
-            subsample of images first to iteratively test the model before proceeding. Also, applied transformations to
-            the images using built-in Roboflow helper functions, skewed some images, and changed the saturation of some
-            images to add different data points. After generating more data points that were able to add more variety,
-            we used Roboflow to annotate each image for our YOLOv8 model.
-        </p>
+                        <li class="c7 c10 ">
+                                <p>ECE4554_Project/initial/rpc/initial.ipynb</p>
+                                <span
+                                        style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 640.77px; height: 180.79px;"><img
+                                                alt="" src="images/image8.png"
+                                                style="width: 640.77px; height: 180.79px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                                                title=""></span>
+                        </li>
+                </ul>
 
-        <p>
-            We started with a pre-trained YOLOv8 model (pre-trained weights, yolov8n.pt). We started training with our
-            custom dataset, through evaluation on a diverse set of images. Whenever we realized that there was a certain
-            area that our training set was missing we added more images to the training set to result in the more
-            inclusive model we could create. Through iteration, we were able to achieve a robust model that performed
-            optimally. To visualize our results during evaluation, we used the OpenCV Library. This Library allowed us
-            to observe our model’s performance in different scenarios and enabled on-the-fly adjustments for improved
-            accuracy.
-        </p>
-    </div>
+                <hr style="page-break-before:always;display:none;">
+                <p class="c6"><span class="c3 c14"></span></p>
+        </div>
 
-    <div class="background1">
-        <h1>
-            Experiments and Results:
-        </h1>
-        <p>
-            At the onset of this assignment, we were interested in producing a CV model that can determine if a rock,
-            paper, or scissors hand is played in the classic game of “rock, paper, scissors”. For our baseline, we
-            considered that the game is played with a strategy that results in the person having a 33.3% chance of
-            guessing the correct counter-hand. We considered this to be the naive model for the game: any detections
-            with confidence levels higher than this default were considered good data. However, we noted that a CV model
-            with accuracy and confidence of 40% would be ineffective, inaccurate, and unusable. As such, as we
-            experimented with creating a model, we sought as high an accuracy as possible (the value threshold we will
-            discuss later).
+        <h2 class="c8" id="h.ir6ejml72wge"><span class="c5">Qualitative Results: </span></h2>
+        <p class="c7"><span class="c0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;As we continued to improve our
+                        model,
+                        one thing was clear: the more variety for the model to train from, the better. That said,
+                        considering
+                        constraints of training on a local machine, we still wanted to keep the dataset small. So we
+                        chose to train
+                        on a variety of images, keeping large amounts of redundancy to a minimum. We knew, however, that
+                        redundancy
+                        is how the model is best trained, so we picked a balance between size of dataset and training
+                        time. </span>
         </p>
-        <p>
-            Understanding that we were generating a classifier, we could have implemented basic feature tracking based
-            on equivalent changes in the gradient of the image. We could then use those features and manually classify
-            them, and compare the data points directly to create an appropriate model. This approach, while plausible,
-            would have more than doubled the time to market. Instead, we favored training our own CNN to classify the
-            elements. To accomplish this, we leveraged the following:
-        </p>
-        <p>
-            <b>RoboFlow:</b>
-        <p>
-            An online website that allows you to import massive datasets and annotate the images with
-            either a
-            classification, segmentation, or others of the like. RoboFlow has built-in training protocols, but for our
-            purposes we favored training locally with YOLOv8
-        </p>
-        </p>
-        <p>
-            <b>YOLOv8 and Cuda run locally</b>.
-        <p>
-            This allowed us to leverage local development, as well as avoid the
-            costs of
-            training models on RoboFlow (which occurs after training more than three models). All training was
-            accomplished on an NVIDIA 2070, using Cuda
-        </p>
-        </p>
-    </div>
+        <p class="c7"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The result is </span><span class="c3">Train
+                        19</span><span class="c0">, our best model. The graphs of which are shown below:</span></p>
+        <h2 class="c8 c18" id="h.hftmjnop0hg9"><span class="c5"></span></h2>
+        <p class="c7"><span
+                        style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 596.50px; height: 447.38px;"><img
+                                alt="" src="images/image1.png"
+                                style="width: 596.50px; height: 447.38px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                                title=""></span></p>
+        <h2 class="c8" id="h.evm6sa6b997n"><span
+                        style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 720.00px; height: 540.00px;"><img
+                                alt="" src="images/image6.png"
+                                style="width: 720.00px; height: 540.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                                title=""></span></h2>
+        <p class="c7"><span
+                        style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 574.01px; height: 287.00px;"><img
+                                alt="" src="images/image12.png"
+                                style="width: 574.01px; height: 287.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                                title=""></span></p>
+        <p class="c7"><span
+                        style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 720.00px; height: 720.00px;"><img
+                                alt="" src="images/image5.png"
+                                style="width: 720.00px; height: 720.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                                title=""></span></p>
+        <p class="c7"><span class="c0">This final graphic illustrates a great representation of joint detection. Notice
+                        how
+                        the hand is clearly in a scissors position (despite it not being separated). However, the model
+                        is detecting
+                        both paper and scissors. This is clear based on the confusion matrix. However, it still believes
+                        that these
+                        are truly scissors based on the confidence values. As such, for our live implementation we only
+                        consider the
+                        highest confidence detections above a particular confidence threshold (or 50% for our
+                        implementation). Those
+                        code segments are shown below:</span></p>
+        <p class="c6"><span class="c0"></span></p>
+        <p class="c6"><span class="c0"></span></p>
+        <p class="c6"><span class="c0"></span></p>
+        <p class="c6"><span class="c0"></span></p>
+        <p class="c6"><span class="c0"></span></p>
+        <p class="c6"><span class="c0"></span></p>
+        <p class="c6"><span class="c0"></span></p>
+        <p class="c6"><span class="c0"></span></p>
+        <ul class="c20 flex-col">
+                <li class="c7 c10 ">
+                        <p>ECE4554_Project/initial/rpc/initial.ipynb</p>
+                        <span
+                                style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 674.50px; height: 311.96px;"><img
+                                        alt="" src="images/image10.png"
+                                        style="width: 674.50px; height: 311.96px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                                        title=""></span>
+                </li>
+        </ul>
+        <ul class="c20 flex-col">
 
+                <li class="c7 c10 ">
+                        <p>ECE4554_Project/initial/rpc/initial.ipynb</p>
+                        <span
+                                style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 648.50px; height: 497.53px;"><img
+                                        alt="" src="images/image9.png"
+                                        style="width: 648.50px; height: 497.53px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                                        title=""></span>
+                </li>
+        </ul>
+
+        <ul class="c20 flex-col">
+                <li class="c7 c21"><span class="c0">(Note that this code segment was too large to display
+                                fully, so
+                                it&rsquo;s recommended you pursue looking the Jupyter notebook in the repo for further
+                                implementation
+                                specifics. However, it&rsquo;s usage allows the developer to specify the model to use,
+                                if they want
+                                debugging messages, a confidence threshold, and the ability to prioritize only returning
+                                the greatest
+                                confidence image from the classified objects</span></li>
+        </ul>
+        <p class="c6"><span class="c0"></span></p>
+        <p class="c7"><span>As a result of this work, we were able to accurately and appropriately classify most cases
+                        of
+                        rock, paper, and scissors. It should be noted that differences in skin pigmentation did cause
+                        our model to
+                        produce lower than expected results, but once this was addressed the model was far more robust
+                        and accurate.
+                </span></p>
+        <div class="color2">
+                <h2 class="c8" id="h.2eks3thg14a8"><span class="c5">Conclusion: </span></h2>
+                <p class="c7"><span class="c0">This report has described the development of a real-time hand gesture
+                                recognition
+                                system using the Ultralytics YOLOv8 model for playing rock-paper-scissors. We approached
+                                this
+                                problem by
+                                creating a diverse dataset that was used to train the model iteratively to classify
+                                different
+                                hand gestures.
+                                To improve our approach, some ideas that we were thinking were to expand our dataset to
+                                encompass a larger
+                                dataset that could include a more diverse dataset (wider variety of skin colorations and
+                                backgrounds). We
+                                also thought about trying other augmentation techniques as a way to generalize the
+                                model. We
+                                could have also
+                                looked into different architectures for our model to improve the overall accuracy of our
+                                computer vision
+                                model. Overall, our model was able to perform well on a live stream of images and was
+                                able to
+                                actively
+                                predict on the images. </span></p>
+        </div>
+        <h2 class="c8" id="h.ycvh79dxb6ez"><span class="c5">References:</span></h2>
+        <p class="c4"><span class="c0">[1] J. Nelson, &ldquo;Rock Paper Scissors Computer Vision dataset by Laurence
+                        Maroney,&rdquo; Roboflow,
+                        https://universe.roboflow.com/joseph-nelson/rock-paper-scissors/browse?queryText=&amp;pageSize=50&amp;startingIndex=0&amp;browseQuery=true
+                        (accessed Nov. 28, 2023).</span></p>
+        <p class="c4"><span class="c0">[2] Free Computer Vision Datasets,
+                        https://public.roboflow.com/models/classification
+                        (accessed Nov. 28, 2023).</span></p>
+        <p class="c4"><span class="c0">[3] D. Medhi, &ldquo;Real-time object detection with Yolo and webcam: Enhancing
+                        your
+                        computer vision skills,&rdquo; Medium,
+                        https://dipankarmedh1.medium.com/real-time-object-detection-with-yolo-and-webcam-enhancing-your-computer-vision-skills-861b97c78993
+                        (accessed Nov. 28, 2023).</span></p>
+        <p class="c4"><span class="c0">[4] Ultralytics, &ldquo;How to draw image segmentation result using opencv python
+                        &middot; issue #561 &middot; ultralytics/ultralytics,&rdquo; GitHub,
+                        https://github.com/ultralytics/ultralytics/issues/561 (accessed Nov. 28, 2023).</span></p>
+        <p class="c4"><span class="c0">[5] S. C. there, &ldquo;Instance segmentation yolo V8: Opencv with python
+                        tutorial,&rdquo; Pysource,
+                        https://pysource.com/2023/02/21/instance-segmentation-yolo-v8-opencv-with-python-tutorial/
+                        (accessed Nov.
+                        28, 2023).</span></p>
+        <p class="c4"><span class="c0">[6] &ldquo;Yolov5,&rdquo; PyTorch, https://pytorch.org/hub/ultralytics_yolov5/
+                        (accessed Nov. 28, 2023).</span></p>
+        <p class="c4"><span class="c0">[7] Ultralytics, &ldquo;Train Custom Data,&rdquo; Ultralytics YOLOv8 Docs,
+                        https://docs.ultralytics.com/yolov5/tutorials/train_custom_data/#13-prepare-dataset-for-yolov5
+                        (accessed
+                        Nov. 28, 2023). </span></p>
+        <p class="c4 c23"><span class="c0"></span></p>
+        <p class="c6"><span class="c0"></span></p>
 </body>
 
 </html>
