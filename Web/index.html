@@ -1,0 +1,60 @@
+<!-- Write me a basic, nice looking webpage -->
+<!-- It should contain at least 3 different paragraphs and a header -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Web</title>
+    <!-- Import CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <t>Rock, Paper, Scissors: YOLO and Roboflow </t>
+    <p class="caption">By: Henry Forsyth, Shefali Ranjan, Sagar Ranga</p>
+
+    <div class="background2 flex-row">
+        <div>
+            <h1>Abstract:</h1>
+            <p>In this project, we wanted to develop a real-time hand gesture recognition system that leverages a
+                pre-trained model to accurately detect and classify hand gestures for playing rock-paper-scissors
+                against a
+                user. We use an Ultralytics YOLOv8 model with the PyTorch deep learning framework for this task. The
+                model
+                is trained on a custom dataset for rock-paper-scissors gestures. The confidence level is pulled from the
+                model along with a bounding box to display the model prediction live. Due to local machine limitations,
+                the
+                model is trained on various subsets of our data and improved incrementally. The final result is a robust
+                model that can accurately classify most cases of rock, paper and scissors.</p>
+        </div>
+        <!-- Import an image -->
+        <img src="public/teaser.png" alt="teaser" class="basicImage">
+    </div>
+
+    <div class="background1">
+        <h1>Introduction:</h1>
+        <p>In the ever evolving landscape of human-computer interaction, the development of artificial intelligence
+            (AI) models to recognize and interpret intricate hand gestures has become an exciting frontier. Our
+            motivation was to integrate real-world actions with digital software. Specifically, our goal was to
+            develop a real-time hand gesture recognition system to accurately detect and classify hand gestures for
+            playing rock-paper-scissors against a user.
+        </p>
+        <p>
+            The application of real-time hand gesture recognition models is huge considering that industry leaders
+            like Apple and Meta have invested large swaths of capital to develop their products like Apple Vision
+            Pro and Meta Quest. Their products actively use headset cameras for tracking hand movements and
+            detecting hand gestures. Without human-computer interaction devices, hand gestures become the new method
+            of interacting with their headsets to perform various tasks.
+        </p>
+        <p>
+            Existing methodologies for hand gesture recognition have improved quite a lot. Prior methodologies often
+            dealt with limitations in accuracy and real-time responsiveness. As a result, this project uses a highly
+            popular model known as YOLO. It uses one of the best neural network architectures to produce high
+            accuracy and overall processing speed, which perfectly matches with our requirements.
+        </p>
+    </div>
+
+</body>
+
+</html>
