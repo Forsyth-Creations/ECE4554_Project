@@ -55,6 +55,75 @@
         </p>
     </div>
 
+
+
+    <div class="background2">
+        <h1>Approach: </h1>
+        <p>
+            To create a model that could be able to detect three different hand positions (rock, paper, and scissors),
+            we first had to create a dataset and annotate each model with a bounding box around the item we wished to
+            classify. We found a great base dataset from Roboflow (public dataset: Rock Paper Scissors Dataset
+            raw-300x300). To add more variety to the dataset, in terms of skin coloration, background colors, and
+            direction of the image, we decided to take the original dataset and add more images of our own hands to add
+            more data points. However, since the original dataset had not been annotated, we opted for picking a small
+            subsample of images first to iteratively test the model before proceeding. Also, applied transformations to
+            the images using built-in Roboflow helper functions, skewed some images, and changed the saturation of some
+            images to add different data points. After generating more data points that were able to add more variety,
+            we used Roboflow to annotate each image for our YOLOv8 model.
+        </p>
+
+        <p>
+            We started with a pre-trained YOLOv8 model (pre-trained weights, yolov8n.pt). We started training with our
+            custom dataset, through evaluation on a diverse set of images. Whenever we realized that there was a certain
+            area that our training set was missing we added more images to the training set to result in the more
+            inclusive model we could create. Through iteration, we were able to achieve a robust model that performed
+            optimally. To visualize our results during evaluation, we used the OpenCV Library. This Library allowed us
+            to observe our model’s performance in different scenarios and enabled on-the-fly adjustments for improved
+            accuracy.
+        </p>
+    </div>
+
+    <div class="background1">
+        <h1>
+            Experiments and Results:
+        </h1>
+        <p>
+            At the onset of this assignment, we were interested in producing a CV model that can determine if a rock,
+            paper, or scissors hand is played in the classic game of “rock, paper, scissors”. For our baseline, we
+            considered that the game is played with a strategy that results in the person having a 33.3% chance of
+            guessing the correct counter-hand. We considered this to be the naive model for the game: any detections
+            with confidence levels higher than this default were considered good data. However, we noted that a CV model
+            with accuracy and confidence of 40% would be ineffective, inaccurate, and unusable. As such, as we
+            experimented with creating a model, we sought as high an accuracy as possible (the value threshold we will
+            discuss later).
+        </p>
+        <p>
+            Understanding that we were generating a classifier, we could have implemented basic feature tracking based
+            on equivalent changes in the gradient of the image. We could then use those features and manually classify
+            them, and compare the data points directly to create an appropriate model. This approach, while plausible,
+            would have more than doubled the time to market. Instead, we favored training our own CNN to classify the
+            elements. To accomplish this, we leveraged the following:
+        </p>
+        <p>
+            <b>RoboFlow:</b>
+        <p>
+            An online website that allows you to import massive datasets and annotate the images with
+            either a
+            classification, segmentation, or others of the like. RoboFlow has built-in training protocols, but for our
+            purposes we favored training locally with YOLOv8
+        </p>
+        </p>
+        <p>
+            <b>YOLOv8 and Cuda run locally</b>.
+        <p>
+            This allowed us to leverage local development, as well as avoid the
+            costs of
+            training models on RoboFlow (which occurs after training more than three models). All training was
+            accomplished on an NVIDIA 2070, using Cuda
+        </p>
+        </p>
+    </div>
+
 </body>
 
 </html>
